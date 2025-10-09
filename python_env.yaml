@@ -1,0 +1,20 @@
+name: blh_hw
+channels:
+  - conda-forge
+dependencies:
+  - cfgrib
+  - dask
+  - eccodes
+  - h5py
+  - hdf5
+  - metpy
+  - netcdf4
+  - notebook
+  - numpy
+  - pandas
+  - scipy
+  - xarray
+  - yaml
+  - bottleneck
+  - ipympl
+  - statsmodels

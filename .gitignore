@@ -1,0 +1,20 @@
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# vscode
+.vscode
+
+data/**/*.nc
+data/**/*.grb
+data/**/*.idx
+data/**/*.hdf5
+data/**/*.csv
+
+data/EPI/*
+data/obs/*
+data/tracing/*.nc
+
+figs/*
+__pycache__
+
+!.gitkeep

@@ -1,0 +1,11 @@
+This directory contains processing scripts for the estimation of boundary layer heights from COSMO-REA6 data.
+Our first approach was to use ECMWF's BLH diagnostic used in IFS
+(see: https://www.ecmwf.int/sites/default/files/elibrary/2017/17736-part-iv-physical-processes.pdf#section.3.10).
+Our second approach uses an alternative version as give in https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2012JD018143.
+Scripts and files using the second method contain "_alt" in their filenames.
+
+Our workflow was to extract the COSMO-REA6 data in the provided GRIB format into the respective years and variable directories,
+estimate BLHs using the "bri_fit ... .py" scripts, and preprocess the BLH estimates by merging and extracting the daily maxima.
+The "loop_JJA_bri ... .sh" were used to extract the compressed outputs and automatically estimate a whole year and have to be
+adapted to the storage logic.
+The preprocessing was done with the "preprocess.sh" shell script, which relies on CDO.
